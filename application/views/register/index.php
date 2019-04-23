@@ -15,7 +15,7 @@ $this->load->view('header');
     <fieldset>
 
         <!-- Form Name -->
-        <legend>Register</legend>
+        <legend>Đăng ký thành viên mới</legend>
 
         <? if (!$valid)
             {
@@ -24,7 +24,7 @@ $this->load->view('header');
 
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="textinput">Username</label>
+            <label class="col-md-4 control-label" for="textinput">Tài khoản</label>
             <div class="col-md-4">
                 <input id="username" name="username" type="text" placeholder="username" class="form-control input-md" required="">
 
@@ -33,7 +33,7 @@ $this->load->view('header');
 
         <!-- Password input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="password">Password</label>
+            <label class="col-md-4 control-label" for="password">Mật khẩu</label>
             <div class="col-md-4">
                 <input id="password" name="password" type="password" placeholder="password" class="form-control input-md">
 
@@ -42,7 +42,7 @@ $this->load->view('header');
 
         <!-- Address input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="textinput">Address</label>
+            <label class="col-md-4 control-label" for="textinput">Địa chỉ</label>
             <div class="col-md-4">
                 <input id="address" name="address" type="address" placeholder="address" class="form-control input-md">
 
@@ -60,7 +60,7 @@ $this->load->view('header');
 
         <!-- Phone Number input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="textinput">Phone Number</label>
+            <label class="col-md-4 control-label" for="textinput">Số điện thoại</label>
             <div class="col-md-4">
                 <input id="phonenumber" name="phonenumber" type="phonenumber" placeholder="phonenumber" class="form-control input-md">
 
@@ -71,7 +71,7 @@ $this->load->view('header');
         <div class="form-group">
             <label class="col-md-4 control-label" for="submit"></label>
             <div class="col-md-4">
-                <button id="submit" name="submit" class="btn btn-primary">Register</button>
+                <button id="submit" name="submit" class="btn btn-primary">Đăng kí</button>
             </div>
         </div>
 

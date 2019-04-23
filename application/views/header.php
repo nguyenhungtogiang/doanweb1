@@ -56,13 +56,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/home">Home</a>
+                        <a href="<?= base_url() ?>home">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">Dịch vụ</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Liên hệ</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -70,8 +70,8 @@
                     if ($logged_in)
                     {
                         ?>
-                        <li><a href="#">Welcome <?=$username?></a> </li>
-                        <li><a href="<?=base_url()?>login/sign_out">Log Out</a></li>
+                        <li><a href="#">Xin chào <?=$username?></a> </li>
+                        <li><a href="<?=base_url()?>login/sign_out">Đăng xuất</a></li>
 
                     <?php
                     }

@@ -16,7 +16,7 @@ $this->load->view('header');
         <div class="col-sm-8">
             <h2><?=$hotel_name?></h2>
 
-            <p><strong>Services Available:</strong><br/>
+            <p><strong>Dịch vụ có sẵn:</strong><br/>
             <ul>
                 <?php
                 foreach ($hotel_services as $s)
@@ -29,7 +29,7 @@ $this->load->view('header');
             </p>
 
 
-            <p><strong>Breakfast Available:</strong><br/>
+            <p><strong>Bữa sáng có sẵn:</strong><br/>
             <ul>
                 <?php
                 foreach ($breakfast_info as $b)
@@ -42,11 +42,11 @@ $this->load->view('header');
             </p>
 
             <p>
-                <a class="btn btn-success" href="<?=base_url()?>hotels/book/<?=$hotel->HotelID?>">BOOK NOW</a>
+                <a class="btn btn-success" href="<?=base_url()?>hotels/book/<?=$hotel->HotelID?>">Đặt ngay</a>
             </p>
         </div>
         <div class="col-sm-4">
-            <h2>Contact Us</h2>
+            <h2>Liên hệ với chúng tôi</h2>
             <address>
                 <br><?=$hotel_street?>
                 <br><?=$hotel_state?> <?=$hotel_zip?>
@@ -63,7 +63,7 @@ $this->load->view('header');
 
     <hr>
 
-<h1>Room Types</h1>
+<h1>Loại phòng </h1>
 <?php
 $cnt = 0;
 

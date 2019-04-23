@@ -16,7 +16,7 @@ $this->load->view('header');
     <fieldset>
 
         <!-- Form Name -->
-        <legend>Bill Payment</legend>
+        <legend>Thanh toán hóa đơn</legend>
 
         <? if (!$valid)
         {
@@ -24,7 +24,7 @@ $this->load->view('header');
         }?>
 
         <div class="form-group ">
-            <label class="col-md-4 control-label" for="number">Card Type</label>
+            <label class="col-md-4 control-label" for="number">Loại hình thanh toán</label>
             <div class="col-md-4">
                 <select class="select form-control" id="card_type" name="card_type">
                     <option value="Visa">
@@ -39,7 +39,7 @@ $this->load->view('header');
 
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="number">Card Number</label>
+            <label class="col-md-4 control-label" for="number">Số tài khoản</label>
             <div class="col-md-4">
                 <input id="username" name="cardnumber" type="text" placeholder="card number" class="form-control input-md" required="">
 
@@ -48,7 +48,7 @@ $this->load->view('header');
 
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="number">Security Code</label>
+            <label class="col-md-4 control-label" for="number">Mật khẩu</label>
             <div class="col-md-4">
                 <input id="username" name="security_code" type="text" placeholder="cvv" class="form-control input-md" required="">
 
@@ -57,7 +57,7 @@ $this->load->view('header');
 
         <!-- Text input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="number">Billing Address</label>
+            <label class="col-md-4 control-label" for="number">Địa chỉ thanh toán</label>
             <div class="col-md-4">
                 <input id="username" name="address" type="text" placeholder="Billing Address" class="form-control input-md" required="">
 
@@ -70,7 +70,7 @@ $this->load->view('header');
         <div class="form-group">
             <label class="col-md-4 control-label" for="submit"></label>
             <div class="col-md-4">
-                <button id="submit" name="submit" class="btn btn-primary">Make Payment</button>
+                <button id="submit" name="submit" class="btn btn-primary">Thanh toán</button>
             </div>
         </div>
 

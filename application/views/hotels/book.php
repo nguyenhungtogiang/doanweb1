@@ -13,8 +13,8 @@ $this->load->view('header');
     <hr>
 
 <div class="row">
-    <h1>Book a Room</h1>
-    <h2>Name</h2>
+    <h1>Đặt phòng</h1>
+    <h2></h2>
 </div>
 <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
 <div class="bootstrap-iso">
@@ -29,7 +29,7 @@ $this->load->view('header');
                         <div class='col-md-4'>
                             <div class="form-group">
                                 <div class="form-group"> <!-- Date input -->
-                                    <label class="control-label" for="date">Start Date</label>
+                                    <label class="control-label" for="date">Ngày nhận phòng</label>
                                     <input class="form-control" id="start_date" name="start_date" placeholder="MM/DD/YYY" type="text"/>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ $this->load->view('header');
                         <div class='col-md-4'>
                             <div class="form-group">
                                 <div class="form-group"> <!-- Date input -->
-                                    <label class="control-label" for="date">End Date</label>
+                                    <label class="control-label" for="date">Ngày trả phòng</label>
                                     <input class="form-control" id="end_date" name="end_date" placeholder="MM/DD/YYY" type="text"/>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ $this->load->view('header');
 
                     <div class="form-group ">
                         <label class="control-label " for="room_type">
-                            Room Type
+                            Loại phòng
                         </label>
                         <select class="select form-control" id="room_type" name="room_type">
                             <?php
@@ -65,7 +65,8 @@ $this->load->view('header');
                     </div>
                     <div class="form-group ">
                         <label class="control-label " for="breakfast_type">
-                            Breakfast Type
+                            Loại bữa sáng
+
                         </label>
                         <select class="select form-control" id="breakfast_type" name="breakfast_type">
 
@@ -82,7 +83,7 @@ $this->load->view('header');
                     </div>
                     <div class="form-group ">
                         <label class="control-label " for="num_guests">
-                            Number of guests
+                            Số lượng khách
                         </label>
                         <select class="select form-control" id="num_guests" name="num_guests">
                             <option value="1">
@@ -95,7 +96,8 @@ $this->load->view('header');
                     </div>
                     <div class="form-group ">
                         <label class="control-label " for="num_breakfast">
-                            Number of breakfast orders
+Số lượng khách đặt bữa sáng
+
                         </label>
                         <select class="select form-control" id="num_breakfast" name="num_breakfast">
                             <option value="1">
@@ -109,7 +111,7 @@ $this->load->view('header');
                     <div class="form-group">
                         <div>
                             <button class="btn btn-primary " name="submit" type="submit">
-                                Next
+                                Tiếp tục
                             </button>
                         </div>
                     </div>

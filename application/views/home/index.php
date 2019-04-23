@@ -14,10 +14,10 @@ $this->load->view('header');
 
     <div class="row">
         <div class="col-sm-8">
-            <h2>What We Do</h2>
-            <p>We provide the best in class hotel booking services.</p>
+            <h2>Chúng tôi có thể làm được gì?</h2>
+            <p>Chúng tôi cung cấp tốt nhất trong các dịch vụ đặt phòng khách sạn.</p>
             <p>
-                <a class="btn btn-success" href="#">Contact Us</a>
+                <a class="btn btn-success" href="#">Liên hệ với chúng tôi</a>
             </p>
         </div>
     </div>
@@ -35,13 +35,11 @@ foreach ($hotels as $hotel) {
     }
     ?>
     <div class="col-sm-4">
-        <img class="img-circle img-responsive img-center" src="../../../assets/img/<?=$cnt?>.png" alt="">
+        <img class="img-circle img-responsive img-center" src="<?= base_url() ?>assets/img/<?=$cnt?>.png" alt="">
         <h2><a href="<?= base_url() ?>hotels/view/<?= $hotel->HotelID ?>"><?= $hotel->Street ?>
                 , <?= $hotel->Zip ?> <?= $hotel->Country ?></a></h2>
-        <a href="<?= base_url() ?>hotels/book/<?= $hotel->HotelID ?>" class="btn btn-success"> Book </a>
-        <p>These marketing boxes are a great place to put some information. These can contain summaries of what the
-            company does, promotional information, or anything else that is relevant to the company. These will usually
-            be below-the-fold.</p>
+        <a href="<?= base_url() ?>hotels/book/<?= $hotel->HotelID ?>" class="btn btn-success"> Đặt ngay </a>
+        <p></p>
     </div>
     <?php
     if ($cnt % 3 == 0) {
